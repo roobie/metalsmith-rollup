@@ -1,13 +1,17 @@
 (function () {
-  'use strict';
+'use strict';
 
-  // This function gets included
-  function cube(x) {
-    // rewrite this as `square( x ) * x`
-    // and see what happens!
-    return x * x * x;
-  }
+// This function isn't used anywhere, so
+// Rollup excludes it from the bundle...
 
-  console.log(cube(5));
+
+// This function gets included
+function cube(x) {
+  // rewrite this as `square( x ) * x`
+  // and see what happens!
+  return x * x * x;
+}
+
+console.log(cube(5));
 
 }());
